@@ -30,7 +30,7 @@ Edit `Final Project.py` to adjust:
 
 Feel free to export your datas using: https://github.com/thibauld1263/CTrader-CSV-Export
 
-For live trading using a TCP port, you can use (everything is already configured): https://github.com/thibauld1263/Python-CTrader-TCP-AutoTrader
+For live trading (using a TCP port), you can use: https://github.com/thibauld1263/Python-CTrader-TCP-AutoTrader
 
 ## Input Features (9)
 
