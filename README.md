@@ -28,7 +28,7 @@ Edit `Final Project.py` to adjust:
 - `OPEN_THRESHOLD`: Signal strength to open trades (default: 0.5)
 - `CLOSE_THRESHOLD`: Signal strength to close trades (default: 0.6)
 
-Feel free to export your data using: https://github.com/thibauld1263/CTrader-CSV-Export
+Feel free to export your datas using: https://github.com/thibauld1263/CTrader-CSV-Export
 
 For live trading using a TCP port, you can use (everything is already configured): https://github.com/thibauld1263/Python-CTrader-TCP-AutoTrader
 
