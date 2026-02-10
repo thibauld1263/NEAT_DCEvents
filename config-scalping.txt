@@ -1,0 +1,84 @@
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 999999999
+pop_size              = 100
+reset_on_extinction   = True
+no_fitness_termination = True
+
+[DefaultGenome]
+activation_default    = tanh
+activation_mutate_rate= 0.1
+activation_options    = tanh sigmoid relu
+
+aggregation_default   = sum
+aggregation_mutate_rate = 0.0
+aggregation_options   = sum
+
+bias_init_mean        = 0.0
+bias_init_stdev       = 1.0
+bias_max_value        = 5.0
+bias_min_value        = -5.0
+bias_mutate_power     = 0.5
+bias_mutate_rate      = 0.7
+bias_replace_rate     = 0.1
+
+weight_init_mean      = 0.0
+weight_init_stdev     = 1.0
+weight_max_value      = 5.0
+weight_min_value      = -5.0
+weight_mutate_power   = 0.5
+weight_mutate_rate    = 0.8
+weight_replace_rate   = 0.1
+
+response_init_mean    = 1.0
+response_init_stdev   = 0.0
+response_max_value    = 5.0
+response_min_value    = -5.0
+response_mutate_power = 0.0
+response_mutate_rate  = 0.0
+response_replace_rate = 0.0
+
+# 9 inputs:
+#   0: event_type (1=UP, -1=DOWN)
+#   1: volatility_norm
+#   2: rsi_norm
+#   3: market_speed
+#   4: momentum (price velocity)
+#   5: price_distance
+#   6: trend_bias
+#   7: in_position (0/1)
+#   8: unrealized_pips_norm
+num_inputs            = 9
+
+# 3 outputs:
+#   0: buy_signal
+#   1: sell_signal
+#   2: close_signal
+num_outputs           = 3
+
+num_hidden            = 0
+feed_forward          = True
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+conn_add_prob         = 0.5
+conn_delete_prob      = 0.3
+node_add_prob         = 0.2
+node_delete_prob      = 0.2
+single_structural_mutation = false
+structural_mutation_surer = default
+enabled_default       = True
+enabled_mutate_rate   = 0.01
+initial_connection    = full_direct
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3.0
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 15
+species_elitism      = 2
+
+[DefaultReproduction]
+elitism            = 2
+survival_threshold = 0.2
+min_species_size   = 2
