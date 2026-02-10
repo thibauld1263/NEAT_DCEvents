@@ -81,6 +81,8 @@ After training, you get:
 <img width="2100" height="1500" alt="9" src="https://github.com/user-attachments/assets/06621fd0-0f07-472a-8ad4-a44d4f84289b" />
 
 
+## NEAT version: 0.92
+
 
 ## License
 
