@@ -1,17 +1,17 @@
 # NEAT_DCEvents
-Machine Learning trading system using NEAT (NeuroEvolution of Augmenting Topologies) and Directional Change events
+Machine Learning trading system using NEAT (NeuroEvolution of Augmenting Topologies) and Directional Change events. Tick by tick training and backtest for a reliable structure.
 
 ## What It Does
 
 Trains a neural network to trade by:
-1. Converting tick data into Directional Change (DC) events
+1. Converting tick data into Directional Change (DC) events (inspired by the Alpha Engine from Richard B. Olsen and James Glattfelder: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2951348)
 2. Calculating technical features (RSI, volatility, momentum, etc.)
 3. Evolving a neural network using NEAT to make trading decisions
 4. Optimizing for Sharpe Ratio (risk-adjusted returns)
 
 ## Features
 
-- **Event-based trading**: Uses Directional Change instead of time bars (inspired by the Alpha Engine fromRichard B. Olsen and James Glattfelder: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2951348)
+- **Event-based trading**: Uses Directional Change instead of time bars 
 - **Neuroevolution**: NEAT evolves network topology and weights
 - **Sharpe optimization**: Maximizes risk-adjusted returns
 - **Live trading**: Socket-based integration with CTrader 
